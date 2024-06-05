@@ -1,0 +1,53 @@
+.title-project{
+    display: none;
+    @include responsive(s) {
+        display: block;
+            font-size: 1.8rem;
+            margin: 0px 32px 24px 32px;
+    }
+}
+
+.frame-project {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border: 1px solid wheat;
+    width: 470px;
+    margin: 8px 8px;
+    height: 124px;
+    border-radius: 5px;
+    background-color: $dark-blue;
+
+    @include responsive(xl) {
+        display: none;
+    }
+    .background {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        background-color: #530082;
+        margin: 8px 8px;
+        border-radius: 5px;
+        a {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            margin: 8px 16px;
+        }
+    }
+
+    .description {
+        margin: 8px 8px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-around;
+    }
+
+    @include responsive(s) {
+        display: flex;
+        width: 100%;
+        max-width: 470px;
+        margin: 0 auto;
+    }
+}

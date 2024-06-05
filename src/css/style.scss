@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import "./sass/layout";
+@import "./sass/color";
+@import "./sass/typography";
+
+body {
+    height: 100vh;
+    overflow-y: hidden;
+    background-color: $dark-blue;
+    display: flex;
+    flex: content;
+    justify-content: center;
+    @include responsive(s) {
+        overflow-y: scroll;
+    }
+}
+
+@import "./sass/header";
+@import "./sass/home";
+@import "./sass/projects";
+@import "./sass/footer";
