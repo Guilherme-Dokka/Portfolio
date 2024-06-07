@@ -12,9 +12,6 @@ body {
     height: 100vh;
     overflow-y: hidden;
     background-color: $dark-blue;
-    display: flex;
-    flex: content;
-    justify-content: center;
     @include responsive(s) {
         overflow-y: scroll;
     }

@@ -12,18 +12,22 @@
         grid-row-start: 1;
         grid-row-end: 3;
         margin: 32px 0px 24px 48px;
+
+        position: relative;
         .dev-1 {
-            font-size: 2.4rem;
+            font-size: 2rem;
         }
         .dev-2 {
-            font-size: 3.4rem;
+            font-size: 3rem;
             margin: 16px 24px;
         }
 
         .dev-3 {
-            font-size: 2.8rem;
+            font-size: 2.5rem;
             margin-left: 8px;
         }
+
+
     }
 
     .about-me {
@@ -108,6 +112,21 @@
             img {
                 margin-right: 8px;
             }
+        }
+    }
+
+    .info-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        font-size: 1.6rem;
+        margin: 24px 32px 0px 32px;
+
+        .email {
+            margin: 8px 16px;
+            font-size: 1.2rem;
         }
     }
 }
