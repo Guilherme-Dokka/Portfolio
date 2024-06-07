@@ -1,14 +1,25 @@
-import contact from '../svg/contact-me.svg'
-import github from '../svg/github.svg'
-import codepen from '../svg/codepen.svg'
-import linkedin from '../svg/linkedin.svg'
+import github from "../svg/github.svg";
+import codepen from "../svg/codepen.svg";
+import linkedin from "../svg/linkedin.svg";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <>
-      <header className="">
+      <header>
         <nav className="navegation-descktop">
           <ul className="item">
+            <li className="item-navegation">
+              <Link to="/" className="ibm-plex-mono-regular">
+                HOME
+              </Link>
+            </li>
+
+            <li className="item-navegation">
+              <Link to="/projects" className="ibm-plex-mono-regular">
+                PROJECTS
+              </Link>
+            </li>
             <li className="item-navegation">
               <a
                 href="https://github.com/Guilherme-Dokka"
@@ -20,25 +31,11 @@ const Header = () => {
             </li>
             <li className="item-navegation">
               <a
-                href="https://codepen.io/trending"
-                className="ibm-plex-mono-regular"
-                target="_blank"
-              >
-                CODEPEN
-              </a>
-            </li>
-            <li className="item-navegation">
-              <a
                 href="https://www.linkedin.com/in/guilherme-dokka/"
                 className="ibm-plex-mono-regular"
                 target="_blank"
               >
                 LINKEDIN
-              </a>
-            </li>
-            <li className="item-navegation">
-              <a href="" className="ibm-plex-mono-regular" target="_blank">
-                CONTACT-ME
               </a>
             </li>
           </ul>
@@ -57,25 +54,11 @@ const Header = () => {
             </li>
             <li className="item-navegation">
               <a
-                href="https://codepen.io/trending"
-                className="ibm-plex-mono-regular"
-                target="_blank"
-              >
-                <img src={codepen} alt="Codepen" />
-              </a>
-            </li>
-            <li className="item-navegation">
-              <a
                 href="https://www.linkedin.com/in/guilherme-dokka/"
                 className="ibm-plex-mono-regular"
                 target="_blank"
               >
-                <img src={linkedin}alt="Linkedin" />
-              </a>
-            </li>
-            <li className="item-navegation">
-              <a href="" className="ibm-plex-mono-regular" target="_blank">
-                <img src={contact} alt="contact-me" />
+                <img src={linkedin} alt="Linkedin" />
               </a>
             </li>
           </ul>

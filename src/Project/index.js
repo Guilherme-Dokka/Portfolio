@@ -3,8 +3,6 @@ import nuBank from "../svg/nu-img-project.svg";
 const Project = () => {
   return (
     <>
-      <h1 className="ibm-plex-mono-medium title-project">Projects</h1>
-
       <div class="frame-project">
         <div class="background">
           <a href="https://nubank-inspirarion.vercel.app/" target="_blank">
@@ -14,7 +12,7 @@ const Project = () => {
         <div className="description">
           <h2 class="name-project ibm-plex-mono-regular">
             <a
-              class="link"
+              class="link-project ibm-plex-mono-regular"
               href="https://nubank-inspirarion.vercel.app"
               target="_blank"
             >
