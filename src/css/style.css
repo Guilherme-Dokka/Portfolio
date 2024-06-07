@@ -9,7 +9,7 @@
 }
 
 .border {
-  border: 1px solid;
+  border: 1px solid white;
 }
 
 .ibm-plex-mono-light {
@@ -37,9 +37,6 @@ body {
   height: 100vh;
   overflow-y: hidden;
   background-color: #030917;
-  display: flex;
-  flex: content;
-  justify-content: center;
 }
 @media screen and (max-width: 960px) {
   body {
@@ -53,7 +50,7 @@ header {
   max-width: 1440px;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
@@ -144,16 +141,17 @@ header .navegation-descktop .item .item-navegation a:hover {
   grid-row-start: 1;
   grid-row-end: 3;
   margin: 32px 0px 24px 48px;
+  position: relative;
 }
 .hero .dev .dev-1 {
-  font-size: 2.4rem;
+  font-size: 2rem;
 }
 .hero .dev .dev-2 {
-  font-size: 3.4rem;
+  font-size: 3rem;
   margin: 16px 24px;
 }
 .hero .dev .dev-3 {
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   margin-left: 8px;
 }
 .hero .about-me {
@@ -233,15 +231,53 @@ header .navegation-descktop .item .item-navegation a:hover {
     margin-right: 8px;
   }
 }
+.hero .info-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  font-size: 1.6rem;
+  margin: 24px 32px 0px 32px;
+}
+.hero .info-contact .email {
+  margin: 8px 16px;
+  font-size: 1.2rem;
+}
+
+.index-project {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+
+.title {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
 
 .title-project {
-  display: none;
+  font-size: 1.8rem;
+  margin: 0px 32px 24px 32px;
+}
+
+.project {
+  height: 100%;
+  width: 98%;
+  display: flex;
+  margin: auto;
+  grid-row-start: 2;
+  grid-row-end: 7;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  flex-wrap: wrap;
 }
 @media screen and (max-width: 960px) {
-  .title-project {
-    display: block;
-    font-size: 1.8rem;
-    margin: 0px 32px 24px 32px;
+  .project {
+    display: flex;
+    flex-direction: row;
   }
 }
 
@@ -250,22 +286,17 @@ header .navegation-descktop .item .item-navegation a:hover {
   align-content: center;
   justify-content: center;
   border: 1px solid wheat;
-  width: 470px;
+  max-width: 428px;
+  width: 100%;
   margin: 8px 8px;
   height: 124px;
   border-radius: 5px;
   background-color: #030917;
 }
-@media screen and (max-width: 1440px) and (min-width: 960px) {
-  .frame-project {
-    display: none;
-  }
-}
 .frame-project .background {
   display: flex;
   text-align: center;
   justify-content: center;
-  background-color: #530082;
   margin: 8px 8px;
   border-radius: 5px;
 }
@@ -282,13 +313,32 @@ header .navegation-descktop .item .item-navegation a:hover {
   align-content: center;
   justify-content: space-around;
 }
+.frame-project .description .link-project {
+  text-decoration: none;
+}
 @media screen and (max-width: 960px) {
   .frame-project {
     display: flex;
     width: 100%;
-    max-width: 470px;
-    margin: 0 auto;
+    max-width: 428px;
+    margin: 8px auto;
   }
+}
+
+.project-mobile {
+  display: none;
+}
+@media screen and (max-width: 960px) {
+  .project-mobile {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 24px 16px;
+  }
+}
+.project-mobile .title-mobile-project {
+  margin: 24px 32px 20px 20px;
+  font-size: 1.8rem;
 }
 
 .go-projects {
