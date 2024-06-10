@@ -26,8 +26,6 @@
             font-size: 2.5rem;
             margin-left: 8px;
         }
-
-
     }
 
     .about-me {
@@ -127,6 +125,7 @@
         .email {
             margin: 8px 16px;
             font-size: 1.2rem;
+            user-select:all;
         }
     }
 }
