@@ -37,11 +37,21 @@ body {
   height: 100vh;
   overflow-y: hidden;
   background-color: #030917;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 @media screen and (max-width: 960px) {
   body {
     overflow-y: scroll;
   }
+}
+body .container {
+  width: 100%;
+}
+body #root {
+  width: 100%;
+  max-width: 1440px;
 }
 
 header {

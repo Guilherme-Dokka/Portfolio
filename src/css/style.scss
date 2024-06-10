@@ -12,8 +12,20 @@ body {
     height: 100vh;
     overflow-y: hidden;
     background-color: $dark-blue;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
     @include responsive(s) {
         overflow-y: scroll;
+    }
+    .container {
+        width: 100%;
+    }
+
+    #root {
+        width: 100%;
+        max-width: 1440px;
     }
 }
 

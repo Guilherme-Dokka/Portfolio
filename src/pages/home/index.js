@@ -2,6 +2,9 @@ import JS from "../../svg/js.svg";
 import CSS from "../../svg/CSS.svg";
 import HTML from "../../svg/HTML.svg";
 import react from "../../svg/react.svg";
+import nuBank from "../../svg/nu-img-project.svg";
+import blog from "../../svg/blog.svg";
+
 import Project from "Project";
 import Header from "Header";
 import Footer from "Footer";
@@ -9,7 +12,7 @@ const Home = () => {
   return (
     <>
       <div className="container">
-      <Header/>
+        <Header />
         <main className="hero">
           <section className="dev">
             <p className="dev-1 ibm-plex-mono-regular">HI, I'M</p>
@@ -61,11 +64,25 @@ const Home = () => {
               PROJECTS
             </h3>
             <div className="mobile">
-              <Project />
+              <Project
+                link={"https://nubank-inspirarion.vercel.app/"}
+                title={"NuBank"}
+                description={"inspired by the Nubank website"}
+                image={nuBank}
+              />
+
+              <Project
+                link={"https://blog-peach-kappa.vercel.app/"}
+                title={"Blog"}
+                description={
+                  "Blog created in the project of the Frontpush course."
+                }
+                image={blog}
+              />
             </div>
           </section>
         </main>
-        <Footer/>
+        <Footer />
       </div>
     </>
   );
