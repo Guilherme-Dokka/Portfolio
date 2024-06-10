@@ -1,27 +1,25 @@
-import nuBank from "../svg/nu-img-project.svg";
 
-const Project = () => {
+
+const Project = ({ link, image, description, title }) => {
   return (
     <>
       <div class="frame-project">
         <div class="background">
-          <a href="https://nubank-inspirarion.vercel.app/" target="_blank">
-            <img src={nuBank} alt="Logo NuBank" />
+          <a href={link} target="_blank">
+            <img src={image} alt="Logo image" />
           </a>
         </div>
         <div className="description">
           <h2 class="name-project ibm-plex-mono-regular">
             <a
               class="link-project ibm-plex-mono-regular"
-              href="https://nubank-inspirarion.vercel.app"
+              href={link}
               target="_blank"
             >
-              NuBank
+              {title}
             </a>
           </h2>
-          <p class="description-project ibm-plex-mono-regular">
-            inspired by the Nubank website
-          </p>
+          <p class="description-project ibm-plex-mono-regular">{description}</p>
         </div>
       </div>
     </>
