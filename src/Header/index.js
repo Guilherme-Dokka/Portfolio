@@ -1,9 +1,10 @@
 import github from "../svg/github.svg";
 import codepen from "../svg/codepen.svg";
 import linkedin from "../svg/linkedin.svg";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
+  const location = useLocation();
   return (
     <>
       <header>
@@ -43,6 +44,13 @@ const Header = () => {
 
         <nav className="navegation-mobile none">
           <ul className="item">
+            <li className="item-navegation">
+              {location.pathname === "/projects" && (
+                <Link to="/" className="ibm-plex-mono-regular">
+                  HOME
+                </Link>
+              )}
+            </li>
             <li className="item-navegation">
               <a
                 href="https://github.com/Guilherme-Dokka"
